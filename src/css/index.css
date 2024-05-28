@@ -5,3 +5,161 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+/*scroll hide*/
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+
+/*move up and left-right animation*/
+#red {
+  animation: moveUpAndLeft 5s ease-in-out forwards;
+}
+
+#green {
+  animation: moveUpAndRight 5s ease-in-out forwards;
+}
+
+#opacity {
+  opacity: 0;
+}
+
+@keyframes moveUpAndLeft {
+  0% {
+    transform: translate(-50%, -50%) translateY(0) translateX(0);
+    opacity: 0;
+  }
+
+  20% {
+    transform: translate(-50%, -50%) translateY(70px) translateX(0);
+    opacity: 1;
+  }
+
+  40% {
+    transform: translate(-50%, -50%) translateY(55px) translateX(0);
+  }
+
+  60% {
+    transform: translate(-50%, -50%) translateY(58px) translateX(0);
+  }
+
+  80% {
+    transform: translate(-50%, -50%) translateY(55px) translateX(-360px);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) translateY(55px) translateX(-360px);
+  }
+}
+
+@keyframes moveUpAndRight {
+  0% {
+    transform: translate(-50%, -50%) translateY(0) translateX(0);
+    scale: 0;
+  }
+
+  15% {
+    transform: translate(-50%, -50%) translateY(-150px) translateX(0);
+    scale: 1;
+  }
+
+  30% {
+    transform: translate(-50%, -50%) translateY(-150px) translateX(0);
+  }
+
+  45% {
+    transform: translate(-50%, -50%) translateY(-85px) translateX(0);
+
+  }
+
+  60% {
+    transform: translate(-50%, -50%) translateY(-110px) translateX(0);
+
+  }
+
+  75% {
+    transform: translate(-50%, -50%) translateY(-90px) translateX(0);
+  }
+
+  90% {
+    transform: translate(-50%, -50%) translateY(-100px) translateX(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) translateY(-100px) translateX(300px);
+  }
+
+}
+
+
+/*scroll animation*/
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  font-family: system-ui;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+h1,
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+  opacity: .7;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+img {
+  animation: show auto linear;
+  animation-timeline: scroll(root block);
+  animation-range: 0 200px;
+}
+
+#progress {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: red;
+  height: 1rem;
+
+  animation: progress auto linear;
+  animation-timeline: scroll(root block);
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}

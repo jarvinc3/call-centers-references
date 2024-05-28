@@ -25,7 +25,7 @@ export default function Carrousel() {
           <div className="flex flex-col text-center">
             <img
               className="object-cover w-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              src="/src/assets/step1.jpg"
+              src="/step1.jpg"
               alt=""
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
@@ -43,7 +43,7 @@ export default function Carrousel() {
           <div className="flex flex-col text-center">
             <img
               className="object-cover w-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              src="/src/assets/step2.jpg"
+              src="/step2.jpg"
               alt=""
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
@@ -61,7 +61,7 @@ export default function Carrousel() {
           <div className="flex flex-col text-center">
             <img
               className="object-cover w-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              src="/src/assets/step3.jpg"
+              src="/step3.jpg"
               alt=""
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
@@ -79,7 +79,7 @@ export default function Carrousel() {
           <div className="flex flex-col text-center">
             <img
               className="object-cover w-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              src="/src/assets/step4.jpg"
+              src="/step4.jpg"
               alt=""
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
@@ -97,7 +97,7 @@ export default function Carrousel() {
           <div className="flex flex-col text-center">
             <img
               className="object-cover w-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              src="/src/assets/step5.webp"
+              src="/step5.webp"
               alt=""
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
